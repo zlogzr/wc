@@ -1,0 +1,56 @@
+.travel-agency-form-info li:nth-of-type(even) {
+  background: #d9ebe0;
+}
+.travel-agency-form-info b {
+  display: inline-block;
+  width: 20%;
+  padding: 6px 8px;
+  background: #00698f;
+  margin: 1px 0;
+  color: #fff;
+  text-align: right;
+}
+.travel-agency-form-info span {
+  display: inline-block;
+  width: 20%;
+  padding: 6px 8px;
+}
+.submit-btns {
+  text-align: center;
+  padding-top: 30px;
+}
+.submit-btns .cancel-btn {
+  margin-right: 20px;
+}
+.quote-start-info .person .ant-card-body {
+  padding: 20px 0;
+}
+.quote-start-info .person .item > span {
+  margin-right: 30px;
+}
+.quote-start-info .person b {
+  margin-right: 40px;
+}
+.quote-start-info .person .title {
+  background: #EEE6E6;
+  padding-left: 25px;
+  margin: 10px;
+}
+.quote-start-info .person .item {
+  padding-left: 25px;
+}
+.quote-start-info .person .select {
+  width: 120px !important;
+  margin-right: 30px;
+}
+.quote-start-info .person .ant-select-enabled {
+  width: 120px !important;
+  margin-right: 30px !important;
+}
+.upload-file {
+  margin: 20px 0;
+}
+.submit-btn {
+  text-align: center;
+  margin-bottom: 20px;
+}

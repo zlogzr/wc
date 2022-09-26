@@ -1,0 +1,39 @@
+.login-container {
+  height: 100%;
+  padding-top: 100px;
+  background: rgba(0, 0, 0, 0.5) url(../../assets/sys_imgs/bg4.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.login-container .mask {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.login-container .login-content {
+  margin-top: 100px;
+  width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.6);
+}
+.login-container .login-content .ant-form-item-control-wrapper {
+  background: transparent;
+}
+.login-container .login-content input {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: transparent;
+}
+.login-container .login-content .login-btn {
+  width: 45%;
+  margin-left: 10px;
+  margin-right: 20px;
+  background: #1ca25b;
+  border-color: #1ca25b;
+}
+.login-container .login-content .signout-btn {
+  width: 45%;
+  background: gray;
+  border-color: gray;
+}

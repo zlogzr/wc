@@ -1,0 +1,38 @@
+.sign .form-info li:nth-of-type(even) {
+  background: #ddebf7;
+}
+.sign .form-info b {
+  display: inline-block;
+  width: 20%;
+  padding: 6px 8px;
+  background-color: #00698f;
+  margin: 1px 0;
+  color: #fff;
+  text-align: right;
+}
+.sign .form-info span {
+  display: inline-block;
+  padding: 6px 8px;
+}
+.sign .sign-history th div {
+  text-align: center;
+}
+.sign .sign-option {
+  margin-top: 20px;
+}
+.sign .sign-option .submit-btn {
+  background: #21ba45;
+  color: #fff;
+  width: 100px;
+}
+.card {
+  position: relative;
+}
+.card .ant-card-head {
+  height: 56px;
+}
+.card .retubtn {
+  position: absolute;
+  top: 12px;
+  right: 33px;
+}

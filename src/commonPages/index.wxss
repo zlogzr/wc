@@ -1,0 +1,176 @@
+/* ===============
+   头部
+   =============== */
+.header .header-top {
+  height: 105px;
+  background: url(../assets/sys_imgs/header-bg.jpg);
+}
+.header .header-top .logo {
+  width: 200px;
+  height: 100%;
+  transform: translate(100px, 0);
+  display: block;
+}
+.header .header-top .header-content {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 105px;
+}
+.header .header-top .header-content h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.header .header-nav {
+  height: 48px;
+  background: #1ca25b;
+  line-height: 48px;
+  min-width: 1280px;
+  box-sizing: border-box;
+}
+.header .header-nav .header-nav-lists {
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.header .header-nav .header-nav-lists > li {
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  position: relative;
+}
+.header .header-nav .header-nav-lists > li:before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 30px;
+  right: 0;
+  top: 9px;
+  background-color: #27b46b;
+}
+.header .header-nav .header-nav-lists > li > a {
+  padding: 0 20px;
+  color: #fff;
+}
+.header .header-nav .header-nav-lists > li > a:hover {
+  color: #fff000;
+}
+.header .header-nav .header-nav-lists > li:first-child > a {
+  border-left: none;
+}
+.header .header-nav .header-nav-lists > li .header-submenu-container {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  padding-top: 3px;
+  transition: 1s;
+}
+.header .header-nav .header-nav-lists > li .header-submenu-container .header-submenu {
+  width: 100%;
+  background: #1ca25b;
+  transition: 1s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.header .header-nav .header-nav-lists > li .header-submenu-container .header-submenu a {
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+.header .header-nav .header-nav-lists > li .header-submenu-container .header-submenu a li {
+  border-bottom: 1px solid #27b46b;
+}
+.header .header-nav .header-nav-lists > li .header-submenu-container .header-submenu a:hover {
+  color: #fff000;
+}
+.header .header-nav .user-login1 {
+  float: right;
+  margin-right: 130px;
+  color: #fff;
+  cursor: pointer;
+}
+.header .header-nav .user-login2 {
+  float: right;
+  margin-right: 130px;
+}
+.header .header-nav .user-login2 .avatar {
+  vertical-align: middle;
+  background-color: #87d068;
+}
+.header .header-nav .user-login2 .name {
+  color: #fff;
+  vertical-align: middle;
+}
+.header .header-nav .user-login2 .icon {
+  font-size: 10px;
+  vertical-align: middle;
+}
+/* ===============
+   主体
+   =============== */
+.main {
+  padding-top: 10px;
+  width: 90%;
+  min-height: 650px;
+  margin: 0 auto;
+}
+.main .detail-content .left-content .title {
+  height: 60px;
+  background: #1ca25b;
+  color: #fff;
+  font-size: 20px;
+  line-height: 60px;
+  padding-left: 20px;
+}
+.main .detail-content .left-content .title i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 10px;
+  position: relative;
+}
+.main .detail-content .left-content .title i svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .detail-content .left-content .left-nav {
+  margin-top: 10px;
+}
+.main .detail-content .left-content .left-nav a li {
+  height: 40px;
+  line-height: 40px;
+  background: #f3f3f3;
+  padding: 0 10px;
+  transition: .5s;
+  margin-bottom: 3px;
+}
+.main .detail-content .left-content .left-nav a li:hover {
+  background: #1ca25b;
+  padding-left: 20px;
+  color: #fff;
+}
+.main .detail-content .left-content .left-nav a li .titleNav {
+  padding-left: 10px;
+}
+.main .detail-content .left-content .left-nav .leftnav-active li {
+  background: #1ca25b;
+  color: #fff;
+}
+.footer {
+  height: 100px;
+  min-width: 1280px;
+  background: #1ca25b;
+  position: relative;
+}
+.footersu {
+  position: absolute;
+  bottom: 3px;
+  right: 6px ;
+}

@@ -1,0 +1,46 @@
+.sign .form-info li:nth-of-type(even) {
+  background: #ddebf7;
+}
+.sign .form-info b {
+  display: inline-block;
+  width: 20%;
+  padding: 6px 8px;
+  background: #00698f;
+  margin: 1px 0;
+  color: #fff;
+  text-align: right;
+}
+.sign .form-info span {
+  display: inline-block;
+  padding: 6px 8px;
+}
+.sign .form-info span a {
+  display: block;
+  width: 100%;
+}
+.sign .sign-history th {
+  background: #00698f !important;
+}
+.sign .sign-option {
+  margin-top: 20px;
+}
+.sign .sign-option .submit-btn {
+  background: #21ba45;
+  color: #fff;
+  width: 100px;
+  margin-bottom: 20px;
+}
+.card {
+  position: relative;
+}
+.card .ant-card-head {
+  height: 56px;
+}
+.card .retubtn {
+  position: absolute;
+  top: 12px;
+  right: 33px;
+}
+.Madovinfopino .ant-modal-content .ant-modal-footer .ant-btn-primary {
+  width: 75px;
+}

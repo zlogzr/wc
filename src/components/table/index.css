@@ -1,0 +1,12 @@
+.ef-common-table .ant-table-body {
+  margin: 0;
+}
+.ef-common-table .ant-table-body tr div {
+  text-align: center;
+}
+.ef-mergeCells-table th {
+  background: #f3f2f2 !important;
+}
+.ef-mergeCells-table .abc {
+  vertical-align: middle;
+}

@@ -1,0 +1,25 @@
+.titleretubtn {
+  position: relative;
+}
+.titleretubtn .retubtn {
+  position: absolute;
+  top: 13px;
+  right: 25px;
+}
+.formchangessh li:nth-of-type(even) {
+  background: #ddebf7;
+}
+.formchangessh li b {
+  display: inline-block;
+  width: 20%;
+  padding: 6px 8px;
+  background: #00698f;
+  margin: 1px 0;
+  color: #fff;
+  text-align: right;
+}
+.formchangessh li span {
+  display: inline-block;
+  width: 78%;
+  padding: 6px 8px;
+}

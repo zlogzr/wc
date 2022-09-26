@@ -1,0 +1,14 @@
+.Flight-schedule-maintenance {
+  position: relative;
+}
+.Flight-schedule-maintenance .liyiuyu {
+  height: 10px;
+}
+.Flight-schedule-maintenance .Km-maintenance-upload {
+  position: absolute;
+  top: 68px;
+  right: 24px;
+  z-index: 10 ;
+  background-color: #00698f;
+  border: none;
+}

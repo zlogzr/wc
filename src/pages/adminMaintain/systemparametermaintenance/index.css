@@ -1,0 +1,35 @@
+.ststempmodal1 {
+  width: 500px !important;
+}
+.ststempmodal1 .ant-btn {
+  width: 70px;
+}
+.addtable {
+  margin-left: 815px;
+  background-color: #00698f !important;
+  border: none;
+}
+.addtable:hover {
+  background-color: none;
+}
+.addnewsdivst .star {
+  color: red;
+}
+.addnewsdivst .title {
+  width: 70%;
+}
+.addnewsdivst li {
+  margin-bottom: 10px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.addnewsdivst .Code {
+  margin-left: 40px;
+}
+.addnewsdivst .Name {
+  margin-left: 27px;
+}
+.addnewsdivst .ename {
+  margin-left: 40px;
+}

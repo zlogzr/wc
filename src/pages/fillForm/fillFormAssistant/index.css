@@ -1,0 +1,62 @@
+.apply-form-common .row-person-info {
+  background: #fff;
+  padding: 20px 0;
+}
+.apply-form-common .apply-form-common-select {
+  background: #fff;
+}
+.apply-form-common .apply-form-common-select .i {
+  color: #8A2BE2;
+}
+.apply-form-common .ftsz-other {
+  position: relative;
+}
+.apply-form-common .ftsz-other .linebox {
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  left: 165px;
+  top: -10px;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+.apply-form-common .ftsz-other .linebox .line {
+  height: 40px;
+  width: 1px;
+  background: #ddd;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+}
+.apply-form-common .ftsz-other .five-upload {
+  position: absolute;
+  left: 379px;
+  top: 8px;
+}
+.apply-form-common .ticket {
+  width: 88%;
+  border: 1px dotted #ccc;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.apply-form-common .ticket .info {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.apply-form-common .ticket .info .operation {
+  position: absolute;
+  right: 5px;
+}
+.apply-form-common .ticket .info .operation .edit {
+  color: blue;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.apply-form-common .ticket .info .operation .delete {
+  background: #81454d;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 5px;
+  cursor: pointer;
+}

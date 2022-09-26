@@ -1,0 +1,120 @@
+.fill-form-assistant {
+  padding-top: 20px;
+  background: #fff;
+}
+.fill-form-assistant .colonetags {
+  margin-left: 24px;
+}
+.fill-form-assistant .row-person-info {
+  display: flex !important;
+  align-items: center;
+}
+.fill-form-assistant .row-person-info .info-title {
+  display: flex;
+  align-items: center;
+}
+.fill-form-assistant .row-person-info .info-title span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.fill-form-assistant .row-person-info .tags {
+  margin-left: 5px;
+}
+.fill-form-assistant .form-title {
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.fill-form-assistant .flight-select {
+  line-height: 30px;
+}
+.fill-form-assistant .fillform-way {
+  line-height: 30px;
+}
+.fill-form-assistant .person-info > div {
+  margin: 10px 0;
+}
+.fill-form-assistant .person-info > div > span {
+  display: inline-block;
+  width: 130px;
+  height: 10px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.fill-form-assistant .person-info > div .area {
+  width: 130px;
+  margin-left: 10px;
+}
+.fill-form-assistant .select {
+  width: 160px;
+}
+.fill-form-assistant .ant-row {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.fill-form-assistant .place-line {
+  line-height: 20px;
+  font-size: 15px;
+  margin-left: 8px;
+  transform: scale(2, 1);
+  color: #ccc;
+}
+.fill-form-assistant .card-need {
+  margin-top: -4px;
+}
+.fill-form-assistant .submit-btn {
+  background: #21ba45;
+  color: #fff;
+  width: 100px;
+  margin-bottom: 20px;
+}
+.fill-form-assistant .submit-btn:hover {
+  background: #16ab39;
+}
+.fill-form-assistant .submit-reset {
+  background: #fff;
+  width: 100px;
+  margin-left: 20px;
+}
+.fill-form-assistant .row {
+  font-size: 16px;
+  padding: 10px 0;
+}
+.fill-form-assistant .row .assistant-titile {
+  text-align: right;
+  margin-top: 4px;
+  font-size: 14px;
+}
+.fill-form-assistant .row .assistant-titile .request-star {
+  color: red;
+}
+.fill-form-assistant .extra-data span {
+  padding: 0 10px 0 4px;
+}
+.rowbtn {
+  text-align: center;
+}
+.ant-table-tbody > tr > td {
+  text-align: center !important;
+}
+.fill-form-assistant .colzl {
+  margin-left: 80px;
+}
+.onbyonepersontitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 10px 48px;
+  height: 44px;
+  align-items: center;
+}
+.onbyonepersontitle .Certificate-types {
+  flex-basis: 230px;
+}
+.onbyonepersontitle div {
+  width: 25%;
+}
+.onbyonepersontitle div b {
+  font-weight: normal;
+}

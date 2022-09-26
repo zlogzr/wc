@@ -1,0 +1,32 @@
+.orders .form-title {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.orders .form li:nth-of-type(even) {
+  background: #ddebf7;
+}
+.orders .form b {
+  display: inline-block;
+  width: 20%;
+  padding: 6px 8px;
+  background: #00698f;
+  margin: 1px 0;
+  color: #fff;
+  text-align: right;
+}
+.orders .form span {
+  display: inline-block;
+  width: 20%;
+  padding: 6px 8px;
+}
+.orders .sign-history th div {
+  text-align: center;
+}
+.orders .sign-option {
+  margin-top: 20px;
+}
+.orders .sign-option .submit-btn {
+  background: #21ba45;
+  color: #fff;
+  width: 100px;
+}

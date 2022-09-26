@@ -1,0 +1,104 @@
+.homenews-box {
+  display: flex;
+  flex-direction: column;
+}
+.homenews-box .headers-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 105px;
+}
+.homenews-box .headers-flex .header-top {
+  width: 100%;
+  height: 105px;
+  background: url(/static/media/header-bg.3db7f5f7.jpg) no-repeat center;
+  position: relative;
+  background-size: 100% 100%;
+}
+.homenews-box .headers-flex .header-top .logo {
+  transform: translate(50px, 110%);
+  display: block;
+}
+.homenews-box .headers-flex .header-top .logo2 {
+  width: 400px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.homenews-box .horizontal-bar {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #00698f;
+}
+.homenews-box .horizontal-bar span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 300px;
+  cursor: pointer;
+}
+.homenews-box .homenews {
+  width: 800px;
+  margin: 0 auto;
+  flex: 1;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding: 20px 0 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.homenews-box .homenews h1 {
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.homenews-box .homenews .Barbacktohomepage {
+  box-sizing: border-box;
+  padding: 0  20px;
+}
+.homenews-box .homenews .Barbacktohomepage .ant-btn-primary {
+  background-color: #00698f;
+}
+.homenews-box .homenews .updeloed {
+  text-align: right;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.homenews-box .homenews .homenewsmain {
+  text-indent: 2em;
+  padding: 0  10px;
+  text-align: justify;
+  margin-bottom: 75px;
+  font-size: 14px;
+}
+.homenews-box .homenews .returnhomebtn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #aaa;
+  background-color: #fff;
+  color: black;
+  font-size: 14px;
+  width: 80px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.homenews-box .homenews .returnhomebtn:hover {
+  background-color: #e6f7ff;
+}
+.homenews-box .homenewsfooter {
+  height: 48px;
+  background-color: #00698f;
+  line-height: 48px;
+  text-align: center;
+}
+.homenews-box .homenewsfooter a {
+  font-size: 14px;
+  color: #fff;
+}

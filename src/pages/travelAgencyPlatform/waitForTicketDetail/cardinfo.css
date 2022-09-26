@@ -1,0 +1,37 @@
+.onbyonepersontitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 10px 0px;
+}
+.onbyonepersontitle .Certificate-types {
+  flex-basis: 230px;
+}
+.onbyonepersontitle div {
+  width: 25%;
+  font-size: 14px;
+}
+.onbyonepersontitle div b {
+  font-weight: normal;
+}
+.itemflahshsgffa .ant-card-head {
+  height: 56px;
+}
+.itemflahshsgffa .ant-card-body {
+  height: 150px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.itemflahshsgffa .itemflahshsgffapepole {
+  margin-bottom: 10px;
+}
+.itemflahshsgffa .itemflahshsgffapepole .itemflahshsgffapepoletitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 10px 0px;
+}
+.itemflahshsgffa .itemflahshsgffapepole .itemflahshsgffapepoletitle div:nth-child(1) {
+  flex-basis: 230px;
+}
+.itemflahshsgffa .itemflahshsgffapepole .itemflahshsgffapepoletitle div {
+  width: 25%;
+}

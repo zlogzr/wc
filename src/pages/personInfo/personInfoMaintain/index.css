@@ -1,0 +1,175 @@
+.person-info-maintain {
+  margin-bottom: 10px;
+}
+.person-info-maintain .submit-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.person-info-maintain .submit-btn button {
+  background: #21ba45;
+  color: #fff;
+  width: 100px;
+}
+.person-info-maintain .b {
+  display: inline-block;
+  width: 75px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+.person-info-maintain .select {
+  width: 130px;
+  margin-left: 10px;
+}
+.person-info-maintain .input {
+  width: 130px;
+  margin-left: 10px;
+}
+.person-info-maintain .textArea {
+  width: 346px;
+  margin-left: 10px;
+}
+.person-info-maintain .button {
+  margin-left: 20px;
+}
+.person-info-maintain .person-info > div {
+  margin: 10px 0;
+}
+.person-info-maintain .person-info > div b {
+  display: inline-block;
+  width: 75px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+.person-info-maintain .person-info > div > span {
+  display: inline-block;
+  width: 130px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.person-info-maintain .person-info > div .area {
+  width: 130px;
+  margin-left: 10px;
+}
+.person-info-maintain .person-info .en-length {
+  width: 180px;
+}
+.person-info-maintain .VIP-and-hobby b {
+  display: inline-block;
+  width: 75px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+.person-info-maintain .VIP-and-hobby > div {
+  margin: 10px 0;
+}
+.person-info-maintain .VIP-and-hobby select {
+  width: 130px;
+  margin-left: 10px;
+}
+.person-info-maintain .VIP-and-hobby input {
+  width: 130px;
+  margin-left: 10px;
+}
+.person-info-maintain .VIP-and-hobby textArea {
+  width: 346px;
+  margin-left: 10px;
+}
+.person-info-maintain .VIP-and-hobby button {
+  margin-left: 20px;
+}
+.person-info-maintain .VIP-and-hobby > div:last-child {
+  float: left;
+}
+.person-info-maintain .VIP-and-hobby > div:last-child > b {
+  float: left;
+}
+.person-info-maintain .VIP-and-hobby ul {
+  padding-left: 30px;
+  width: 600px;
+}
+.person-info-maintain .VIP-and-hobby ul li {
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+  width: 570px;
+  font-size: 0;
+}
+.person-info-maintain .VIP-and-hobby ul li:hover {
+  background: #e6f7ff;
+}
+.person-info-maintain .VIP-and-hobby ul li:first-child {
+  color: #fff;
+  font-weight: bold;
+  background: #00698f;
+}
+.person-info-maintain .VIP-and-hobby ul li > span {
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.person-info-maintain .VIP-and-hobby ul li > span:first-child {
+  display: inline-block;
+  width: 200px;
+  border-left: 1px solid #e8e8e8;
+}
+.person-info-maintain .VIP-and-hobby ul li > span:nth-child(2) {
+  display: inline-block;
+  width: 300px;
+}
+.person-info-maintain .VIP-and-hobby ul li > span:nth-child(3) {
+  display: inline-block;
+  width: 70px;
+}
+.person-info-maintain .VIP-and-hobby ul li i {
+  color: #65b0ff;
+  cursor: pointer;
+}
+.person-info-maintain .card-info .ant-table-small {
+  border: none;
+}
+.person-info-maintain .card-info > div {
+  margin: 10px 0;
+}
+.person-info-maintain .card-info b {
+  display: inline-block;
+  width: 75px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: right;
+  width: 150px;
+}
+.person-info-maintain .card-info .select {
+  width: 200px;
+}
+.person-info-maintain .card-info .input {
+  width: 130px;
+  margin-left: 10px;
+}
+.person-info-maintain .card-info textArea {
+  width: 346px;
+  margin-left: 10px;
+}
+.person-info-maintain .card-info .newAdd {
+  margin: 10px 0 0 830px;
+}
+.person-info-maintain .card-info .ant-table-body {
+  margin: 0 0 0px  0;
+}
+.person-info-maintain .card-info .ant-table-body th {
+  background: #00698f !important;
+}
+.person-info-maintain .card-info .ant-table-body tr {
+  border-bottom: 1px solid #e8e8e8 !important;
+  border-left: 1px solid #e8e8e8 !important;
+}

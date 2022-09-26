@@ -1,0 +1,152 @@
+.orders-detail .form-title {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.orders-detail .submit-btn {
+  background: #21ba45;
+  color: #fff;
+  width: 100px;
+}
+.fill-form-assistant :global {
+  padding-top: 20px;
+  background: #fff;
+}
+.fill-form-assistant :global .fill-flight {
+  background: #eee;
+  padding: 10px 10px 10px 0;
+}
+.fill-form-assistant :global .fill-flight .items {
+  margin-bottom: 40px;
+  position: relative;
+}
+.fill-form-assistant :global .fill-flight .items .line-kuang {
+  width: 75%;
+  height: 100px;
+  position: absolute;
+  left: 100px;
+  top: -10px;
+  border: 1px solid #1E90FF;
+}
+.fill-form-assistant :global .fill-flight .items .line-kuang .xuhao {
+  position: absolute;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  background: #1E90FF;
+  left: -20px;
+  text-align: center;
+}
+.fill-form-assistant :global .fill-flight .items .line-kuang .close {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  z-index: 999;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.fill-form-assistant :global .fill-flight .items .line-kuang .close:hover {
+  transform: rotate(360deg);
+}
+.fill-form-assistant :global .fill-flight .time {
+  width: 150px;
+}
+.fill-form-assistant :global .fill-flight .form-title {
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+}
+.fill-form-assistant :global .fill-flight .flight-select {
+  line-height: 50px;
+}
+.fill-form-assistant :global .fillform-way {
+  line-height: 30px;
+}
+.fill-form-assistant :global .select {
+  width: 160px;
+}
+.fill-form-assistant :global .ant-row {
+  margin: 20px 0;
+}
+.fill-form-assistant :global .place-line {
+  line-height: 20px;
+  font-size: 15px;
+  margin-left: 8px;
+  transform: scale(2, 1);
+  color: #ccc;
+}
+.fill-form-assistant :global .card-need {
+  margin-top: -4px;
+}
+.fill-form-assistant :global .submit-btn {
+  background: #00698f;
+  color: #fff;
+  width: 100px;
+}
+.fill-form-assistant :global .submit-btn:hover {
+  background: #00698f;
+}
+.fill-form-assistant :global .submit-btn .submit-btn {
+  margin-left: 80px;
+}
+.fill-form-assistant :global .submit-cancel {
+  background-color: #fff;
+  color: #666;
+  width: 100px;
+  margin-left: 20px;
+}
+.fill-form-assistant :global .form-title {
+  font-size: 15px;
+}
+.fill-form-assistant :global .row {
+  padding: 10px 0;
+}
+.fill-form-assistant :global .row .assistant-titile {
+  text-align: right;
+  margin-top: 4px;
+}
+.fill-form-assistant :global .row .assistant-titile .request-star {
+  color: red;
+}
+.ant-time-picker-panel-input {
+  max-width: 117px;
+}
+.ant-time-picker-panel-select {
+  width: 65px ;
+}
+.ant-time-picker-panel-select li {
+  text-align: center ;
+  padding: 0 ;
+}
+.ant-time-picker-panel-input-wrap {
+  max-width: 130px !important;
+}
+.ant-time-picker-panel-clear-btn {
+  right: 2px;
+}
+.BCT :global .ant-tag {
+  padding: 0;
+}
+.BCT :global .ant-list-item-content-single {
+  justify-content: center;
+}
+.card {
+  position: relative;
+}
+.card .retubtn {
+  position: absolute;
+  top: 12px;
+  right: 33px;
+}
+.Changereturnbox .ant-card-body .flight-info .ant-card-body .ef-mergeCells-table .ant-spin-nested-loading .ant-spin-container .ant-table .ant-table-content .ant-table-body .ant-table-thead tr th:nth-child(1) {
+  width: 60px;
+}
+.Changereturnbox .ant-card-body .flight-info .ant-card-body .ef-mergeCells-table .ant-spin-nested-loading .ant-spin-container .ant-table .ant-table-content .ant-table-body .ant-table-thead tr th:nth-child(2) {
+  width: 80px;
+}
+.Changereturnbox .ant-card-body .flight-info .ant-card-body .ef-mergeCells-table .ant-spin-nested-loading .ant-spin-container .ant-table .ant-table-content .ant-table-body .ant-table-thead tr th:nth-last-child(1) {
+  width: 80px;
+}

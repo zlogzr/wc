@@ -1,0 +1,154 @@
+.flight-container .flight {
+  position: relative;
+}
+.flight-container .flight .flight-one-11 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
+}
+.flight-container .flight .flight-one-11 > div {
+  width: 100%;
+}
+.flight-container .flight .flight-one-switcher {
+  width: 20px;
+  height: 52px;
+  position: absolute;
+  top: 22px;
+  right: -21px;
+  border: 1px solid #ddd;
+  border-left: none;
+}
+.flight-container .flight .flight-one-switcher span {
+  position: absolute;
+  right: -9px;
+  top: 10px;
+  color: #999;
+  padding: 0 2px;
+  background: #ddd;
+  cursor: pointer;
+}
+.flight-container .flight .flight-one-switcher span:hover {
+  background: #2cf712;
+  color: #fff;
+}
+.flight-container .flight .flight-one-2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
+}
+.flight-container .flight .time-from-to-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
+  flex-direction: row-reverse;
+}
+.flight-container .flight .time-from-to-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100px;
+  flex-direction: row-reverse;
+}
+.flight-container .flight .manyWay .content {
+  position: relative;
+}
+.flight-container .flight .manyWay .content .order {
+  color: #fff;
+  padding: 1px 3px;
+  position: absolute;
+  background: #1E90FF;
+  top: 0;
+  left: 80px;
+}
+.flight-container .flight .manyWay .content .close {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.flight-container .flight .manyWay .content .close:hover {
+  transform: rotate(360deg);
+}
+.flight-container .flight .manyWay .content .content-info {
+  border: 1px solid #1E90FF;
+  height: 100px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.flight-container .flight .manyWay .add {
+  padding: 5px 10px;
+  margin-top: 10px;
+  color: #1E90FF;
+  border: 1px dotted #ccc;
+  cursor: pointer;
+}
+.flight-container .flight .manyWay .add:hover {
+  border-color: #1E90FF;
+}
+.flight-container .flight .car-need {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.flight-container .customer {
+  width: 100%;
+}
+.flight-container .row {
+  padding: 10px 0;
+}
+.flight-container .row .assistant-titile {
+  text-align: right;
+  margin-top: 4px;
+}
+.flight-container .row .assistant-titile .request-star {
+  color: red;
+}
+.ticket {
+  width: 88%;
+  border: 1px dotted #ccc;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.ticket .info {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.ticket .info .operation {
+  position: absolute;
+  right: 5px;
+}
+.ticket .info .operation .edit {
+  color: blue;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.ticket .info .operation .delete {
+  background: #81454d;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.ticket .personInfoList {
+  width: 400px;
+  padding: 10px;
+  position: absolute;
+  left: 90px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #ccc;
+  z-index: 999;
+}
+.ticket .personInfoList li {
+  width: 100%;
+}
+.ticket .personInfoList li > span:nth-child(1) {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  padding: 5px;
+}

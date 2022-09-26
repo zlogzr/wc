@@ -1,0 +1,11 @@
+.card {
+  position: relative;
+}
+.card .ant-card-head {
+  height: 56px;
+}
+.card .retubtn {
+  position: absolute;
+  top: 12px;
+  right: 33px;
+}

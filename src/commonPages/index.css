@@ -1,0 +1,156 @@
+/* ===============
+   头部
+   =============== */
+.header {
+  width: 100%;
+}
+.header .header-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 105px;
+}
+.header .header-flex .header-top {
+  width: 100%;
+  height: 105px;
+  background: url(../assets/sys_imgs/header-bg.jpg) no-repeat center;
+  position: relative;
+  background-size: 100% 100%;
+}
+.header .header-flex .header-top .logo {
+  transform: translate(50px, 110%);
+  display: block;
+}
+.header .header-flex .header-top .logo2 {
+  width: 400px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .header-nav {
+  height: 48px;
+  background: #00698f;
+  line-height: 48px;
+  min-width: 1280px;
+  box-sizing: border-box;
+}
+.header .header-nav .header-nav-lists {
+  box-sizing: border-box;
+  padding: 0 0 0 315px;
+}
+.header .header-nav .header-nav-lists > li {
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  position: relative;
+}
+.header .header-nav .header-nav-lists > li:before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 30px;
+  right: 0;
+  top: 9px;
+  text-align: center;
+  background-color: #fff;
+}
+.header .header-nav .header-nav-lists > li > a {
+  padding: 0 20px;
+  color: #fff;
+}
+.header .header-nav .header-nav-lists > li > a:hover {
+  color: #fff000;
+}
+.header .header-nav .header-nav-lists > li:first-child > a {
+  border-left: none;
+}
+.header .header-nav .header-nav-lists > li .header-submenu-container {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  padding-top: 3px;
+  margin-left: -20px;
+  transition: 1s;
+}
+.header .header-nav .header-nav-lists > li .header-submenu-container .header-submenu {
+  width: 140%;
+  background: #00698f;
+  transition: 1s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.header .header-nav .header-nav-lists > li .header-submenu-container .header-submenu a {
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.header .header-nav .header-nav-lists > li .header-submenu-container .header-submenu a li {
+  border-bottom: 1px solid #00698f;
+  margin: 0 auto;
+  width: 100% !important;
+}
+.header .header-nav .header-nav-lists > li .header-submenu-container .header-submenu a:hover {
+  color: #fff000;
+}
+.header .header-nav .header-nav-lists li {
+  width: 114px !important;
+  text-align: center;
+}
+.header .header-nav .user-login1 {
+  float: right;
+  margin-right: 130px;
+  color: #fff;
+  cursor: pointer;
+}
+.header .header-nav .user-login2 {
+  line-height: 42.5px;
+}
+.header .header-nav .user-login2 .avatar {
+  vertical-align: middle;
+  background-color: skyblue;
+}
+.header .header-nav .user-login2 .name {
+  color: #fff;
+  vertical-align: middle;
+}
+.header .header-nav .user-login2 .icon {
+  font-size: 10px;
+  vertical-align: middle;
+}
+/* ===============
+   主体
+   =============== */
+.main {
+  padding-top: 10px;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.main .ant-row > .ant-col-19 {
+  margin-left: 120px ;
+  margin-bottom: 100px;
+}
+.Loginmodebox {
+  position: fixed;
+  left: 50%;
+  top: 0;
+}
+.footone {
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+}
+.footone .fottermain {
+  color: #fff;
+}
+.footer {
+  height: 48px;
+  width: 100%;
+  background: #00698f;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}

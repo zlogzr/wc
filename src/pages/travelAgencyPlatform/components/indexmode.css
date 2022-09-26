@@ -1,0 +1,33 @@
+.select {
+  width: 120px !important;
+  margin: 0 10px;
+}
+.Quoted .ant-card-head {
+  height: 56px;
+}
+.person .persontitle {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.person .persontitle div:nth-child(1) {
+  flex-basis: 230px;
+}
+.person .persontitle > div {
+  width: 25%;
+}
+.person .persontitle > div b {
+  margin-right: 5px;
+}
+.person .persontitles {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 53%;
+}
+.person .persontitles > div {
+  width: 50%;
+}
+.person .persontitles > div b {
+  margin-right: 5px;
+}

@@ -1,0 +1,14 @@
+.BCT .itemshs {
+  display: block;
+}
+.BCT .itemshs .ant-list-item-content-single {
+  display: block;
+}
+.BCT .itemshs .ant-list-item-content-single .Departuredate {
+  width: 128px;
+  height: 24px;
+  margin-right: 5px;
+}
+.BCT .itemshs .ant-list-item-content-single .Trafficvehicle {
+  margin-left: 5px;
+}

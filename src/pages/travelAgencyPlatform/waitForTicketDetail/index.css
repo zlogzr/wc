@@ -1,0 +1,17 @@
+.card {
+  position: relative;
+}
+.card .ant-card-head {
+  height: 56px;
+}
+.card .retubtn {
+  position: absolute;
+  top: 12px;
+  right: 33px;
+}
+.ant-upload-list-text .ant-upload-list-item-undefined {
+  width: 35%;
+}
+.Madovinfopino .ant-modal-content .ant-modal-footer .ant-btn-primary {
+  width: 75px;
+}

@@ -1,0 +1,53 @@
+b {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+.newAdd {
+  margin: 20px 0;
+}
+.ant-modal-body {
+  padding: 24px 70px 5px 70px;
+}
+.modal1 {
+  width: 500px !important;
+}
+.modal1 .ant-btn {
+  width: 70px;
+}
+.addtable {
+  margin-left: 815px;
+  background-color: #00698f !important;
+  border: none;
+}
+.addtable:hover {
+  background-color: none;
+}
+.addnewsdivst .star {
+  color: red;
+}
+.addnewsdivst .title {
+  width: 70%;
+}
+.addnewsdivst li {
+  margin-bottom: 10px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.addnewsdivst .area {
+  margin-left: 40px;
+}
+.addnewsdivst .cityname {
+  margin-left: 27px;
+}
+.addnewsdivst .aroporename {
+  margin-left: 15px;
+}
+.addnewsdivst .ename {
+  margin-left: 21px;
+}

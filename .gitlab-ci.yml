@@ -1,0 +1,290 @@
+before_script:
+  - $Publish = "Build"
+  - $Publish_Files = "Build\*"
+  - $DEV_Folder = "C:\inetpub\wwwroot\WZSTRS\DEV\"
+  - $DEV_Site_Name = "TRS_DEV"
+  - $Source_Code = "C:\GitLab_Runner\Front_Source\"
+  - $Backup_Dev = "C:\inetpub\wwwroot\WZSTRS\Backup\DEV"
+  - $QAS_Folder = "C:\inetpub\wwwroot\WZSTRS\QAS\"
+  - $Backup_QAS = "C:\inetpub\wwwroot\WZSTRS\Backup\QAS"  
+  - $QAS_Site_Name = "TRS_QAS"
+  - $PRD_Site_Name = "Intelligent_Ticketing"
+  - $PRD_Folder = "C:\inetpub\wwwroot\ITS\"
+  #中文乱码问题
+  - chcp 65001
+
+stages:
+  - Build_DEV
+  - Before_Deploy_DEV
+  - Deploy_DEV
+  - After_Deploy_DEV
+  - Build_QAS
+  - Before_Deploy_QAS
+  - Deploy_QAS
+  - After_Deploy_QAS
+  - Build_PRD  
+  - Before_Deploy_PRD
+  - Deploy_PRD
+  - After_Deploy_PRD
+  
+Build_Front_DEV:
+  stage: Build_DEV
+  script:
+      - pushd
+      - mkdir $Source_Code -force
+      - cp .\* $Source_Code -Recurse -force
+      - cd $Source_Code
+      - mkdir build -force
+      - rmdir build -Recurse
+      - npm run build
+      - popd
+      - mkdir build -force
+      - rmdir build -Recurse
+      - cp C:\GitLab_Runner\Front_Source\build .\ -Recurse -force
+  artifacts:
+    paths:
+      - build\*
+    expire_in: 20 mins      
+  only:
+      refs:
+      - branches
+      variables:
+      - ($CI_COMMIT_BRANCH == "DEV")
+  tags:
+      - M1_Front
+
+Stop_WebSite_DEV:
+  stage: Before_Deploy_DEV
+  needs: [Build_Front_DEV]
+  script:
+      - C:\Windows\System32\inetsrv\appcmd.exe stop site $DEV_Site_Name
+      - C:\Windows\System32\inetsrv\appcmd.exe stop apppool /apppool.name:$DEV_Site_Name
+  allow_failure: true
+  only:
+      refs:
+      - branches
+      variables:
+      - ($CI_COMMIT_BRANCH == "DEV")
+  tags:
+      - M1_Front
+
+Deploy_Front_DEV:
+  stage: Deploy_DEV
+  needs: [Stop_WebSite_DEV,Build_Front_DEV]
+  dependencies:
+      - Build_Front_DEV  
+  script:
+      - mkdir $DEV_Folder -force
+      - cp .\build\* $DEV_Folder -Recurse -force
+  only:
+      refs:
+      - branches
+      variables:
+      - ($CI_COMMIT_BRANCH == "DEV")
+  tags:
+      - M1_Front
+
+
+
+Start_WebSite_DEV:
+  stage: After_Deploy_DEV
+  needs: [Deploy_Front_DEV]
+  script:
+      - C:\Windows\System32\inetsrv\appcmd.exe start apppool /apppool.name:$DEV_Site_Name
+      - C:\Windows\System32\inetsrv\appcmd.exe start site $DEV_Site_Name      
+      - Invoke-WebRequest http://10.41.23.110:9033 -UseBasicParsing | Select -ExpandProperty Content
+      - Invoke-WebRequest http://10.41.23.110:9033/Home/GetSiteName -UseBasicParsing | Select -ExpandProperty Content      
+  only:
+      refs:
+      - branches
+      variables:
+      - ($CI_COMMIT_BRANCH == "DEV")
+  tags:
+      - M1_Front
+
+      
+Build_Front_QAS:
+  stage: Build_QAS
+  script:
+      - pushd
+      - mkdir $Source_Code -force
+      - cp .\* $Source_Code -Recurse -force
+      - cd $Source_Code
+      - mkdir build -force
+      - rmdir build -Recurse
+      - npm run build
+      - popd
+      - mkdir build -force
+      - rmdir build -Recurse
+      - cp C:\GitLab_Runner\Front_Source\build .\ -Recurse -force
+  artifacts:
+    paths:
+      - build\*
+    expire_in: 20 mins       
+  only:
+      refs:
+      - branches
+      variables:
+      - ($CI_COMMIT_BRANCH == "master")
+  tags:
+      - M1_Front
+
+Stop_WebSite_QAS:
+  stage: Before_Deploy_QAS
+  needs: [Build_Front_QAS]
+  script:
+      - C:\Windows\System32\inetsrv\appcmd.exe stop site $QAS_Site_Name
+      - C:\Windows\System32\inetsrv\appcmd.exe stop apppool /apppool.name:$QAS_Site_Name
+  allow_failure: true
+  only:
+      refs:
+      - branches
+      variables:
+      - ($CI_COMMIT_BRANCH == "master")
+  tags:
+      - M1_Front
+
+Deploy_Front_QAS:
+  stage: Deploy_QAS
+  needs: [Build_Front_QAS]
+  dependencies:
+      - Build_Front_QAS   
+  script:
+      - mkdir $QAS_Folder -force
+      - cp .\build\* $QAS_Folder -Recurse -force
+  artifacts:
+      paths:
+      - build\*
+  only:
+      refs:
+      - branches
+      variables:
+      - ($CI_COMMIT_BRANCH == "master")
+  tags:
+      - M1_Front
+
+#Backup_WebSite_QAS:
+#  stage: After_Deploy_QAS
+#  needs: [Deploy_Front_QAS]
+#  script:
+#      - echo $CI_COMMIT_REF_NAME
+#      - mkdir $Backup_QAS -force
+#      - cd $Backup_QAS
+#      - mkdir $CI_COMMIT_REF_NAME -force
+#      - cp $QAS_Folder $CI_COMMIT_REF_NAME -Recurse -force
+#  only:
+#      - tags
+#  except:
+#      - web  
+#  tags:
+#      - M1_Front
+
+
+Start_WebSite_QAS:
+  stage: After_Deploy_QAS
+  needs: [Deploy_Front_QAS]
+  script:
+      - C:\Windows\System32\inetsrv\appcmd.exe start apppool /apppool.name:$QAS_Site_Name
+      - C:\Windows\System32\inetsrv\appcmd.exe start site $QAS_Site_Name    
+      - Invoke-WebRequest http://10.41.23.110:9044 -UseBasicParsing | Select -ExpandProperty Content   
+      - Invoke-WebRequest http://10.41.23.110:9044/Home/GetSiteName -UseBasicParsing | Select -ExpandProperty Content      
+  only:
+      refs:
+      - branches
+      variables:
+      - ($CI_COMMIT_BRANCH == "master")
+  tags:
+      - M1_Front
+
+
+Build_Front_PRD:
+  stage: Build_PRD
+  script:
+      - pushd
+      - mkdir $Source_Code -force
+      - cp .\* $Source_Code -Recurse -force
+      - cd $Source_Code
+      - mkdir build -force
+      - rmdir build -Recurse
+      - npm run build
+      - popd
+      - mkdir build -force
+      - rmdir build -Recurse
+      - cp C:\GitLab_Runner\Front_Source\build .\ -Recurse -force
+  artifacts:
+    paths:
+      - build\*
+    expire_in: 20 mins       
+  only:
+      refs:
+      - web
+      variables:
+          - $Release == "PRD"  
+  except:
+      - master
+      - branches 
+  tags:
+      - M1_Front
+
+
+
+Stop_WebSite_PRD:
+  stage: Before_Deploy_PRD
+  needs: [Build_Front_PRD]
+  script:
+      - C:\Windows\System32\inetsrv\appcmd.exe stop site $PRD_Site_Name
+      - C:\Windows\System32\inetsrv\appcmd.exe stop apppool /apppool.name:$PRD_Site_Name
+  allow_failure: true
+  only:
+      refs:
+      - web
+      variables:
+          - $Release == "PRD"  
+  except:
+      - master
+      - branches
+  tags:
+      - ITS_PRD_Front
+
+Deploy_Front_PRD:
+  stage: Deploy_PRD
+  needs: [Stop_WebSite_PRD,Build_Front_PRD]
+  dependencies:
+      - Build_Front_PRD    
+  script:
+      - mkdir $PRD_Folder -force
+      - cp build\* $PRD_Folder -Recurse -force
+  artifacts:
+    paths:
+      - build\*
+    expire_in: 20 mins       
+  only:
+      refs:
+      - web
+      variables:
+          - $Release == "PRD"  
+  except:
+      - master
+      - branches 
+  tags:
+      - ITS_PRD_Front
+
+
+Start_WebSite_PRD:
+  stage: After_Deploy_PRD
+  needs: [Deploy_Front_PRD]
+  script:
+      - C:\Windows\System32\inetsrv\appcmd.exe start apppool /apppool.name:$PRD_Site_Name
+      - C:\Windows\System32\inetsrv\appcmd.exe start site $PRD_Site_Name    
+      - Invoke-WebRequest http://iTicket.wistronzs.com -UseBasicParsing | Select -ExpandProperty Content   
+      - Invoke-WebRequest http://iTicket.wistronzs.com/Home/GetSiteName -UseBasicParsing | Select -ExpandProperty Content      
+  only:
+      refs:
+      - web
+      variables:
+          - $Release == "PRD"  
+  except:
+      - master
+      - branches 
+  tags:
+      - ITS_PRD_Front      

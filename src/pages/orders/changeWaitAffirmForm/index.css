@@ -1,0 +1,47 @@
+.orders .form li:nth-of-type(even) {
+  background: #ddebf7;
+}
+.orders .form b {
+  display: inline-block;
+  width: 20%;
+  padding: 6px 8px;
+  background: #00698f;
+  margin: 1px 0;
+  color: #fff;
+  text-align: right;
+}
+.orders .form span {
+  display: inline-block;
+  width: 20%;
+  padding: 6px 8px;
+}
+.orders .sign-history th {
+  background: #f1f1f1 !important;
+}
+.orders .sign-option {
+  margin-top: 20px;
+}
+.orders .sign-option .submit-btn {
+  background: #21ba45;
+  color: #fff;
+  width: 100px;
+}
+.orders-detail .form-title {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.orders-detail .submit-btn {
+  background: #21ba45;
+  color: #fff;
+  width: 100px;
+}
+.order-back-change .ant-table-thead > tr > th {
+  background-color: #21ba72;
+}
+.order-back-change .ant-table-thead > tr > th.th-colorful {
+  background-color: #d63428 !important;
+  color: #fff;
+}
+.submain {
+  text-align: center;
+}

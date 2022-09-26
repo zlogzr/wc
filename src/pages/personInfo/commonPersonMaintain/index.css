@@ -1,0 +1,20 @@
+.family-info-maintain th {
+  background: #f1f1f1 !important;
+}
+.family-info-maintain .inner-table .ant-table-body {
+  margin: 0;
+}
+.family-info-maintain .inner-table .ant-table-body th {
+  background: #f1f1f1 !important;
+}
+.Frequentlyusedcontact-information {
+  position: relative;
+}
+.Frequentlyusedcontact-information .Frequentlyusedcontact-information-addbtn {
+  position: absolute;
+  top: 68px;
+  right: 26px;
+  z-index: 10 ;
+  background-color: #00698f;
+  border: none;
+}
